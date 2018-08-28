@@ -3,9 +3,9 @@
     "base": "io.atom.electron.BaseApp",
     "base-version": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "/app/Rocket.Chat+/rocketchat",
+    "command": "/app/Rocket.Chat/rocketchat",
     "separate-locales": false,
     "rename-desktop-file": "rocketchat.desktop",
     "rename-icon": "rocketchat",
@@ -31,27 +31,27 @@
                 "cp -r usr/* opt/* /app",
                 "install -D rocketchat.64x64.png /app/share/icons/hicolor/64x64/apps/rocketchat.png",
                 "install -D rocketchat.128x128.png /app/share/icons/hicolor/128x128/apps/rocketchat.png",
-                "chmod -R a-s,go+rX,go-w /app/Rocket.Chat+",
-                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat+/rocketchat %U' /app/share/applications/rocketchat.desktop",
+                "chmod -R a-s,go+rX,go-w /app/Rocket.Chat",
+                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat/rocketchat %U' /app/share/applications/rocketchat.desktop",
                 "install -Dm644 chat.rocket.RocketChat.appdata.xml /app/share/appdata/chat.rocket.RocketChat.appdata.xml"
             ],
             "sources": [
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.12.1/rocketchat_2.12.1_amd64.deb",
-                    "sha256": "2a186ae8e1e284e669f3a8ca85f11bd8390a57d393fda0d36081e9643a9bc69a"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.13.0/rocketchat_2.13.0_amd64.deb",
+                    "sha256": "002a6f6d45ca55e6bdcec17a8300af1cadb43f8612d749b68b7bd86cd26c3b92"
                 },
                 {
                     "type": "file",
                     "only-arches": ["i386"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.12.1/rocketchat_2.12.1_i386.deb",
-                    "sha256": "bfec47bf6b4c9e4fdef7db6b93b14fa1f1919bfdf40abae0a67c980e0ca614f5"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.13.0/rocketchat_2.13.0_i386.deb",
+                    "sha256": "cd31634792277f41e26acd164feda0b43622a7798cf69ce1bfc2f91668b8acfa"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.12.1.tar.gz",
-                    "sha256": "38617bab3ad16e5a9758db743881b003bfc1a8958334b4898f1eb77f55effcb8"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.13.0.tar.gz",
+                    "sha256": "63f58513eeb67f437856cb7c94fcb6c64f0df9614a4698773006ddff86e841a3"
                 },
                 {
                     "type": "file",
