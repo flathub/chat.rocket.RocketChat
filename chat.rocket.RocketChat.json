@@ -3,9 +3,9 @@
     "base": "io.atom.electron.BaseApp",
     "base-version": "stable",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "/app/Rocket.Chat+/rocketchat",
+    "command": "/app/Rocket.Chat/rocketchat",
     "separate-locales": false,
     "rename-desktop-file": "rocketchat.desktop",
     "rename-icon": "rocketchat",
@@ -31,8 +31,8 @@
                 "cp -r usr/* opt/* /app",
                 "install -D rocketchat.64x64.png /app/share/icons/hicolor/64x64/apps/rocketchat.png",
                 "install -D rocketchat.128x128.png /app/share/icons/hicolor/128x128/apps/rocketchat.png",
-                "chmod -R a-s,go+rX,go-w /app/Rocket.Chat+",
-                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat+/rocketchat %U' /app/share/applications/rocketchat.desktop",
+                "chmod -R a-s,go+rX,go-w /app/Rocket.Chat",
+                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat/rocketchat %U' /app/share/applications/rocketchat.desktop",
                 "install -Dm644 chat.rocket.RocketChat.appdata.xml /app/share/appdata/chat.rocket.RocketChat.appdata.xml"
             ],
             "sources": [
