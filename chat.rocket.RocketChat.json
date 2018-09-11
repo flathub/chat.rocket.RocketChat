@@ -5,10 +5,10 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "/app/Rocket.Chat/rocketchat",
+    "command": "/app/Rocket.Chat/rocketchat-desktop",
     "separate-locales": false,
-    "rename-desktop-file": "rocketchat.desktop",
-    "rename-icon": "rocketchat",
+    "rename-desktop-file": "rocketchat-desktop.desktop",
+    "rename-icon": "rocketchat-desktop",
     "finish-args": [
         "--share=ipc",
         "--socket=wayland",
@@ -29,10 +29,10 @@
                 "tar xf data.tar.xz",
                 "rm -f control.tar.gz data.tar.xz debian-binary",
                 "cp -r usr/* opt/* /app",
-                "install -D rocketchat.64x64.png /app/share/icons/hicolor/64x64/apps/rocketchat.png",
-                "install -D rocketchat.128x128.png /app/share/icons/hicolor/128x128/apps/rocketchat.png",
+                "install -D rocketchat.64x64.png /app/share/icons/hicolor/64x64/apps/rocketchat-desktop.png",
+                "install -D rocketchat.128x128.png /app/share/icons/hicolor/128x128/apps/rocketchat-desktop.png",
                 "chmod -R a-s,go+rX,go-w /app/Rocket.Chat",
-                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat/rocketchat %U' /app/share/applications/rocketchat.desktop",
+                "desktop-file-edit --set-key=Exec --set-value='/app/Rocket.Chat/rocketchat-desktop %U' /app/share/applications/rocketchat-desktop.desktop",
                 "install -Dm644 chat.rocket.RocketChat.appdata.xml /app/share/appdata/chat.rocket.RocketChat.appdata.xml"
             ],
             "sources": [
