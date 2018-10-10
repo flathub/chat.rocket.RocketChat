@@ -88,9 +88,30 @@
                 },
                 {
                     "type": "file",
+                    "only-arches": ["x86_64"],
                     "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-x64.zip",
                     "sha256": "a57f4c534bbeee806912f2b25651ef7dd3b38b5a0d7b1c6e3920f9db0dc4319b",
-                    "dest-filename": "chromedriver-v2.0.0-linux-x64.zip",
+                    "dest": "npm-cache"
+                },
+                {
+                    "type": "file",
+                    "only-arches": ["i386"],
+                    "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-ia32.zip",
+                    "sha256": "ff1a70f960e4258a88686066e7e7c1efac93f4ad46b54068bd4df1c15e7d45c1",
+                    "dest": "npm-cache"
+                },
+                {
+                    "type": "file",
+                    "only-arches": ["arm"],
+                    "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-arm.zip",
+                    "sha256": "bd55623cbdbe9821c6f310e4cd20afea37fece58e85f8243eb3c9a6af04cbd8b",
+                    "dest": "npm-cache"
+                },
+                {
+                    "type": "file",
+                    "only-arches": ["aarch64"],
+                    "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-arm64.zip",
+                    "sha256": "cbe61b53424f32368721d7566c838e62392eed28cdb66cac6710599b40419a15",
                     "dest": "npm-cache"
                 },
                 {
