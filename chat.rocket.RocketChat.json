@@ -103,7 +103,7 @@
                 {
                     "type": "file",
                     "only-arches": ["arm"],
-                    "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-arm.zip",
+                    "url": "https://github.com/electron/electron/releases/download/v2.0.0/chromedriver-v2.0.0-linux-armv7l.zip",
                     "sha256": "bd55623cbdbe9821c6f310e4cd20afea37fece58e85f8243eb3c9a6af04cbd8b",
                     "dest": "npm-cache"
                 },
