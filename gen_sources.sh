@@ -13,7 +13,10 @@ TMP=$( mktemp -d )
 OUTPUT="generated-sources.json"
 LOCK="package-lock.json"
 
-curl -vL $PACKAGE | bsdtar -xvf- -C ${TMP}
+curl -vL $PACKAGE -o ${TMP}/file
+sha256sum ${TMP}/file
+bsdtar -xvf ${TMP}/file -C ${TMP}
+rm ${TMP}/file
 pushd ${TMP}/*/
 
 npm i --package-lock-only

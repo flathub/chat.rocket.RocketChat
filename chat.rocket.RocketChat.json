@@ -59,8 +59,8 @@
                 "generated-sources.json",
                 {
                     "type": "archive",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.14.3.tar.gz",
-                    "sha256": "1f86b80a92e044a24fe9b016a7fbea1acf6bbea5d98b3af6fa69107e7d0de467",
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.14.4.tar.gz",
+                    "sha256": "5242f8f793d0c2be2ef3fcbdad8fc662fe65ac9ed4667aca6f144f60f7d71201",
                     "dest": "main"
                 },
                 {
