@@ -1833,11 +1833,11 @@
         "url": "https://registry.npmjs.org/dot-prop/-/dot-prop-3.0.0.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/fe/f7",
-        "dest-filename": "839f6ced811941ee02a61378bd7fa0a60c8c97032e9de6706afb084ef522d7f99b35b1712014b3e2f9a4ae5aa52ebac31f6e2f387d3f23df87ecd4769853",
-        "sha512": "fef7839f6ced811941ee02a61378bd7fa0a60c8c97032e9de6706afb084ef522d7f99b35b1712014b3e2f9a4ae5aa52ebac31f6e2f387d3f23df87ecd4769853",
+        "dest": "npm-cache/_cacache/content-v2/sha512/1f/28",
+        "dest-filename": "1008a50148597cc0a4190527a6332c1159c10336276f35b8c657266ede76d9f2aabdb9b88fa062cc7510e97d2ae99249bd0576059292b1c455f7f28ffbeb",
+        "sha512": "1f281008a50148597cc0a4190527a6332c1159c10336276f35b8c657266ede76d9f2aabdb9b88fa062cc7510e97d2ae99249bd0576059292b1c455f7f28ffbeb",
         "type": "file",
-        "url": "https://registry.npmjs.org/dotenv/-/dotenv-6.1.0.tgz"
+        "url": "https://registry.npmjs.org/dotenv/-/dotenv-6.2.0.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/de/f1",
@@ -4091,7 +4091,7 @@
         "dest-filename": "14d82ad2c5ed9e8e0411b3932875e889e97b",
         "sha1": "203114d82ad2c5ed9e8e0411b3932875e889e97b",
         "type": "file",
-        "url": "https://registry.npmjs.org/resolve/-/resolve-1.1.7.tgz"
+        "url": "http://registry.npmjs.org/resolve/-/resolve-1.1.7.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/65/ac",
@@ -4847,7 +4847,7 @@
         "dest-filename": "2ddf70eed564dff2d57f1e1a137d9f05078b",
         "sha1": "2a8f2ddf70eed564dff2d57f1e1a137d9f05078b",
         "type": "file",
-        "url": "https://registry.npmjs.org/multipipe/-/multipipe-0.1.2.tgz"
+        "url": "http://registry.npmjs.org/multipipe/-/multipipe-0.1.2.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/30/75",
@@ -5655,11 +5655,11 @@
         "url": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.0.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/fc/e2",
-        "dest-filename": "f3e45f5b799516c121d90eb79781aa755d2857e96f83087402ab0085eee67cf2ceae4e50f6711dc9044efb49e80298db5bd4876cb7e35f9b071d53a29587",
-        "sha512": "fce2f3e45f5b799516c121d90eb79781aa755d2857e96f83087402ab0085eee67cf2ceae4e50f6711dc9044efb49e80298db5bd4876cb7e35f9b071d53a29587",
+        "dest": "npm-cache/_cacache/content-v2/sha512/ec/f8",
+        "dest-filename": "87b4b965e4b767288330d74d08fbcc495d1e605b6430598913ea226f6b46d78ad64a6bf5ccad26dd9a0debd979da89dcfd42e99dd153da32b66517d57db0",
+        "sha512": "ecf887b4b965e4b767288330d74d08fbcc495d1e605b6430598913ea226f6b46d78ad64a6bf5ccad26dd9a0debd979da89dcfd42e99dd153da32b66517d57db0",
         "type": "file",
-        "url": "https://registry.npmjs.org/progress/-/progress-2.0.2.tgz"
+        "url": "https://registry.npmjs.org/progress/-/progress-2.0.3.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha1/2c/d3",
@@ -6460,11 +6460,11 @@
         "url": "https://registry.npmjs.org/sparkles/-/sparkles-1.0.1.tgz"
     },
     {
-        "dest": "npm-cache/_cacache/content-v2/sha512/ab/d8",
-        "dest-filename": "5e76dcf25c7af94b4035bc43e82bfee5f0da5f905613aba88263e3e7a3665b75947a59ec5916da9e546906c56dd310930df75e19e791270063267a794841",
-        "sha512": "abd85e76dcf25c7af94b4035bc43e82bfee5f0da5f905613aba88263e3e7a3665b75947a59ec5916da9e546906c56dd310930df75e19e791270063267a794841",
+        "dest": "npm-cache/_cacache/content-v2/sha512/96/bd",
+        "dest-filename": "8464272d0b604d47b8fb5b32761690f39f1932d6c8dfc6fbd8132cf13726fa9595c7383984a09785bb826ea589647e16b5299a49ca8aa227ba60035aaaf1",
+        "sha512": "96bd8464272d0b604d47b8fb5b32761690f39f1932d6c8dfc6fbd8132cf13726fa9595c7383984a09785bb826ea589647e16b5299a49ca8aa227ba60035aaaf1",
         "type": "file",
-        "url": "https://registry.npmjs.org/spdx-correct/-/spdx-correct-3.0.2.tgz"
+        "url": "https://registry.npmjs.org/spdx-correct/-/spdx-correct-3.1.0.tgz"
     },
     {
         "dest": "npm-cache/_cacache/content-v2/sha512/d9/74",
