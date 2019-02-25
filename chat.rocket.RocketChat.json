@@ -51,7 +51,8 @@
                     "npm_config_nodedir": "/run/build/rocketchat-desktop/node",
                     "electron_config_cache": "/run/build/rocketchat-desktop/npm-cache",
                     "ELECTRON_CACHE": "/run/build/rocketchat-desktop/npm-cache",
-                    "LANG": "en_US.UTF-8"
+                    "LANG": "en_US.UTF-8",
+                    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
                 }
             },
             "buildsystem": "simple",
@@ -59,8 +60,8 @@
                 "generated-sources.json",
                 {
                     "type": "archive",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.14.7.tar.gz",
-                    "sha256": "d970b13e2a3371e76a3658ff3a84c669bcad671000069f51a41eb13ebb77a33e",
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.0.tar.gz",
+                    "sha256": "6d9ccfcf9f9f6067cae66f0fa3edbfb74e7796cc651648ff6f9864e435e1c851",
                     "dest": "main"
                 },
                 {
