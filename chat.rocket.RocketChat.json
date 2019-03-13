@@ -5,7 +5,7 @@
     "base": "io.atom.electron.BaseApp",
     "base-version": "stable",
     "sdk": "org.freedesktop.Sdk",
-    "command": "/app/bin/rocketchat-desktop",
+    "command": "/app/Rocket.Chat/rocketchat-desktop",
     "separate-locales": false,
     "rename-desktop-file": "rocketchat-desktop.desktop",
     "rename-icon": "rocketchat-desktop",
@@ -16,145 +16,44 @@
         "--socket=pulseaudio",
         "--share=network",
         "--device=all",
-        "--filesystem=xdg-download",
+        "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications"
     ],
-    "build-options": {
-        "env": {
-            "NPM_CONFIG_LOGLEVEL": "info"
-        }
-    },
     "modules": [
         {
-            "name": "nodejs",
-            "cleanup": [
-                "/include",
-                "/share",
-                "/app/lib/node_modules/npm/changelogs",
-                "/app/lib/node_modules/npm/doc",
-                "/app/lib/node_modules/npm/html",
-                "/app/lib/node_modules/npm/man",
-                "/app/lib/node_modules/npm/scripts"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://nodejs.org/dist/v8.9.3/node-v8.9.3.tar.xz",
-                    "sha256": "748ddb3baa6b85e6a56e38aacd066586e7581952f84a92bc8152248a9be6b2da"
-                }
-            ]
-        },
-        {
             "name": "rocketchat-desktop",
-            "build-options": {
-                "env": {
-                    "npm_config_nodedir": "/run/build/rocketchat-desktop/node",
-                    "electron_config_cache": "/run/build/rocketchat-desktop/npm-cache",
-                    "ELECTRON_CACHE": "/run/build/rocketchat-desktop/npm-cache",
-                    "LANG": "en_US.UTF-8",
-                    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
-                }
-            },
             "buildsystem": "simple",
             "sources": [
-                "generated-sources.json",
-                {
-                    "type": "archive",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.0.tar.gz",
-                    "sha256": "6d9ccfcf9f9f6067cae66f0fa3edbfb74e7796cc651648ff6f9864e435e1c851",
-                    "dest": "main"
-                },
                 {
                     "type": "file",
                     "path": "chat.rocket.RocketChat.appdata.xml"
                 },
                 {
                     "type": "file",
-                    "path": "rocketchat-desktop.64x64.png"
-                },
-                {
-                    "type": "file",
-                    "path": "rocketchat-desktop.128x128.png"
-                },
-                {
-                    "type": "file",
-                    "path": "rocketchat-desktop.desktop"
-                },
-                {
-                    "type": "file",
-                    "path": "package-lock.json",
-                    "dest": "main"
-                },
-                {
-                    "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0/chromedriver-v3.0.0-linux-x64.zip",
-                    "sha256": "31c59d42d80001721dbdbf2f2c8b3b527bdb8df38c766b020329cb46cf1d3bb4",
-                    "dest": "npm-cache"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.1/rocketchat_2.15.1_amd64.deb",
+                    "sha256": "8a0e6ca103e8c0ed9853006b4ce40a44727ed7a07329b0fce6150c989e9e295e"
                 },
                 {
                     "type": "file",
                     "only-arches": ["i386"],
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0/chromedriver-v3.0.0-linux-ia32.zip",
-                    "sha256": "5d6f62b534b58efc9682e21a41a3991f109b1a78481b067cb1b3be5a0d0f461c",
-                    "dest": "npm-cache"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.1/rocketchat_2.15.1_i386.deb",
+                    "sha256": "eb94374ee1a40c2e5d0c1be70f308d961ff51e563a730b5b62822ff64c1b911b"
                 },
                 {
                     "type": "file",
-                    "only-arches": ["arm"],
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0/chromedriver-v3.0.0-linux-armv7l.zip",
-                    "sha256": "afa53c2150b2a2e953b803c40e8cec0109392ffbc291fb143304c67777197d87",
-                    "dest": "npm-cache"
-                },
-                {
-                    "type": "file",
-                    "only-arches": ["aarch64"],
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0/chromedriver-v3.0.0-linux-arm64.zip",
-                    "sha256": "6eefd2dcc78f830ab8ba12836a5c36a6b286b2eda03a3562cabdaa51c9c8baa1",
-                    "dest": "npm-cache"
-                },
-                {
-                    "type": "file",
-                    "url": "https://github.com/electron/electron/releases/download/v3.0.0/SHASUMS256.txt",
-                    "sha256": "6560dd88350be568ff29cdb1cdb05e68304268b821b1d5040f9a5fde901ef670",
-                    "dest-filename": "SHASUMS256.txt-3.0.0",
-                    "dest": "npm-cache"
-                },
-                {
-                    "type": "archive",
-                    "url": "https://nodejs.org/dist/v8.9.3/node-v8.9.3.tar.xz",
-                    "sha256": "748ddb3baa6b85e6a56e38aacd066586e7581952f84a92bc8152248a9be6b2da",
-                    "dest": "node"
-                },
-                {
-                    "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/hunspell/Spelling%20dictionaries/en_US/en_US.zip",
-                    "sha256": "f1b0bdb280495e57779771bf46ff098cb466a3968414313ef1a226fa21a576b2",
-                    "dest": "dictionaries"
-                },
-                {
-                    "type": "script",
-                    "dest-filename": "run.sh",
-                    "commands": [
-                        "APPDIR=/app/Rocket.Chat",
-                        "export PATH=$( npm --prefix=$APPDIR bin ):$PATH",
-                        "exec electron $APPDIR \"$@\""
-                    ]
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.1.tar.gz",
+                    "sha256": "a9bd5abae86f3147342c0b3292faa214ddc8ce4235286eeea9856b172e68501e"
                 }
             ],
             "build-commands": [
-                "npm --prefix=main --offline --cache=npm-cache install",
-                "npm --prefix=main --offline --cache=npm-cache run build -- --env=production",
-                "cp -ra main ${FLATPAK_DEST}/Rocket.Chat",
-                "cp -ra dictionaries ${FLATPAK_DEST}/dictionaries",
-                "install -D main/build/icons/512x512.png /app/share/icons/hicolor/512x512/apps/rocketchat-desktop.png",
-                "install -D rocketchat-desktop.64x64.png /app/share/icons/hicolor/64x64/apps/rocketchat-desktop.png",
-                "install -D rocketchat-desktop.128x128.png /app/share/icons/hicolor/128x128/apps/rocketchat-desktop.png",
-                "install -D rocketchat-desktop.desktop /app/share/applications/rocketchat-desktop.desktop",
-                "install -Dm755 run.sh /app/bin/rocketchat-desktop",
-                "chmod -R a-s,go+rX,go-w /app/Rocket.Chat",
-                "desktop-file-edit --set-key=Exec --set-value='/app/bin/rocketchat-desktop %U' /app/share/applications/rocketchat-desktop.desktop",
-                "install -Dm644 chat.rocket.RocketChat.appdata.xml /app/share/appdata/chat.rocket.RocketChat.appdata.xml"
+                "ar x rocketchat_*.deb",
+                "tar xf data.tar.xz -C ${FLATPAK_DEST} --strip-components=2 ./opt ./usr",
+                "rm -f control.tar.gz data.tar.xz debian-binary",
+                "rm -r ${FLATPAK_DEST}/share/icons/hicolor/1024x1024",
+                "chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/Rocket.Chat",
+                "desktop-file-edit --set-key=Exec --set-value=\"${FLATPAK_DEST}/Rocket.Chat/rocketchat-desktop %U\" ${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop",
+                "install -Dm644 chat.rocket.RocketChat.appdata.xml ${FLATPAK_DEST}/share/appdata/chat.rocket.RocketChat.appdata.xml"
             ]
         }
     ]
