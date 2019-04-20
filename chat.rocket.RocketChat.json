@@ -31,19 +31,19 @@
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.1/rocketchat_2.15.1_amd64.deb",
-                    "sha256": "8a0e6ca103e8c0ed9853006b4ce40a44727ed7a07329b0fce6150c989e9e295e"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.2/rocketchat_2.15.2_amd64.deb",
+                    "sha256": "eb180cf7c9b7f9ead2e1812ceed3aa9b6d8df6bc23d854ad62f93df638622090"
                 },
                 {
                     "type": "file",
                     "only-arches": ["i386"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.1/rocketchat_2.15.1_i386.deb",
-                    "sha256": "eb94374ee1a40c2e5d0c1be70f308d961ff51e563a730b5b62822ff64c1b911b"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.15.2/rocketchat_2.15.2_i386.deb",
+                    "sha256": "a78934d59a1064bf80e4f36d0ad7dcd95cbbf5d214658bc7501363db983051d5"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.1.tar.gz",
-                    "sha256": "a9bd5abae86f3147342c0b3292faa214ddc8ce4235286eeea9856b172e68501e"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.2.tar.gz",
+                    "sha256": "d0fe85f226289473972b7d8cf2c97813d155b82b26bc003c123c7bbeb405fcbd"
                 }
             ],
             "build-commands": [
