@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>chat.rocket.RocketChat.desktop</id>
-  <name>Rocket.Chat+</name>
+  <name>Rocket.Chat</name>
   <project_license>MIT</project_license>
   <developer_name>Rocket.Chat</developer_name>
   <summary>Open Source Team Communication</summary>
