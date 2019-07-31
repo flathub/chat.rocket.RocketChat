@@ -2,10 +2,10 @@
     "app-id": "chat.rocket.RocketChat",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "18.08",
-    "base": "io.atom.electron.BaseApp",
-    "base-version": "stable",
+    "base": "org.electronjs.Electron2.BaseApp",
+    "base-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "/app/Rocket.Chat/rocketchat-desktop",
+    "command": "/app/bin/rocketchat-desktop",
     "separate-locales": false,
     "rename-desktop-file": "rocketchat-desktop.desktop",
     "rename-icon": "rocketchat-desktop",
@@ -17,9 +17,12 @@
         "--share=network",
         "--device=all",
         "--filesystem=xdg-download",
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
+        "shared-modules/dbus-glib/dbus-glib-0.110.json",
+        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
         {
             "name": "rocketchat-desktop",
             "buildsystem": "simple",
@@ -44,6 +47,14 @@
                     "type": "file",
                     "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.15.3.tar.gz",
                     "sha256": "9e7a5e66e65312bc71358873e1583de841b9142c91d835876da001d0bb2e4f65"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "run.sh",
+                    "commands": [
+                        "export TMPDIR=$XDG_CACHE_HOME",
+                        "exec /app/Rocket.Chat/rocketchat-desktop \"$@\""
+                    ]
                 }
             ],
             "build-commands": [
@@ -51,8 +62,9 @@
                 "tar xf data.tar.xz -C ${FLATPAK_DEST} --strip-components=2 ./opt ./usr",
                 "rm -f control.tar.gz data.tar.xz debian-binary",
                 "rm -r ${FLATPAK_DEST}/share/icons/hicolor/1024x1024",
+                "install -Dm755 run.sh ${FLATPAK_DEST}/bin/rocketchat-desktop",
                 "chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/Rocket.Chat",
-                "desktop-file-edit --set-key=Exec --set-value=\"${FLATPAK_DEST}/Rocket.Chat/rocketchat-desktop %U\" ${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop",
+                "desktop-file-edit --set-key=Exec --set-value=\"${FLATPAK_DEST}/bin/rocketchat-desktop %U\" ${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop",
                 "install -Dm644 chat.rocket.RocketChat.appdata.xml ${FLATPAK_DEST}/share/appdata/chat.rocket.RocketChat.appdata.xml"
             ]
         }
