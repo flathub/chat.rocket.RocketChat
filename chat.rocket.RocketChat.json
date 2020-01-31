@@ -18,6 +18,7 @@
         "--device=all",
         "--filesystem=xdg-download",
         "--filesystem=xdg-pictures",
+        "--filesystem=xdg-documents",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
@@ -35,13 +36,13 @@
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.17.2/rocketchat_2.17.2_amd64.deb",
-                    "sha256": "ba963dea5f186be351e4bdb1ed4ed3b18d4a8b21e5132c9e33271f31fc220339"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/2.17.3/rocketchat_2.17.3_amd64.deb",
+                    "sha256": "783cafd889ee7b1ea93f285d2d3f50ec4e34a72d973a95989b7ba110e0d6d42d"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.17.2.tar.gz",
-                    "sha256": "aba1f60c2e154f8ab5564c5d59479ed6741a955027dbe3410e802ee5688015c4"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/2.17.3.tar.gz",
+                    "sha256": "47458f39236cd9f546a8670616d8435f25fe88d59bf8c2339b549b0b58eefccb"
                 },
                 {
                     "type": "script",
