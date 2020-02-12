@@ -1,9 +1,9 @@
  {
     "app-id": "chat.rocket.RocketChat",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "18.08",
+    "base-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "/app/bin/rocketchat-desktop",
     "separate-locales": false,
