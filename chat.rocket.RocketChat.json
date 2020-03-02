@@ -23,8 +23,6 @@
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
-        "shared-modules/dbus-glib/dbus-glib-0.110.json",
-        "shared-modules/libappindicator/libappindicator-gtk3-12.10.json",
         {
             "name": "rocketchat-desktop",
             "buildsystem": "simple",
@@ -48,8 +46,8 @@
                     "type": "script",
                     "dest-filename": "run.sh",
                     "commands": [
-                        "export TMPDIR=$XDG_CACHE_HOME",
-                        "exec /app/Rocket.Chat/rocketchat-desktop --no-sandbox \"$@\""
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "exec zypak-wrapper /app/Rocket.Chat/rocketchat-desktop \"$@\""
                     ]
                 }
             ],
