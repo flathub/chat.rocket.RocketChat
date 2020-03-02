@@ -48,8 +48,8 @@
                     "type": "script",
                     "dest-filename": "run.sh",
                     "commands": [
-                        "export TMPDIR=$XDG_CACHE_HOME",
-                        "exec /app/Rocket.Chat/rocketchat-desktop --no-sandbox \"$@\""
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "exec zypak-wrapper /app/Rocket.Chat/rocketchat-desktop \"$@\""
                     ]
                 }
             ],
