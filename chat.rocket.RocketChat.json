@@ -34,13 +34,13 @@
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.0.1/rocketchat_3.0.1_amd64.deb",
-                    "sha256": "ec4ed6defe672a6f8a41d3606c5896024fb3582430c7669a6dbe22b48da8a690"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.0.2/rocketchat_3.0.2_amd64.deb",
+                    "sha256": "2b5e814548d8b2dad2e8c2e09142574c8d1e224f01d8be78e31fe947cb03236c"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/3.0.1.tar.gz",
-                    "sha256": "6586b4745f2e2262f93eefce3e6001c0bb200e7eed243afeb8a37e6ad82bd1b5"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/3.0.2.tar.gz",
+                    "sha256": "5ca518421dde4fbbf5f3b3b1904dd63562bc43f16bb9c169ffed07022033a0df"
                 },
                 {
                     "type": "script",
