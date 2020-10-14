@@ -1,9 +1,9 @@
  {
     "app-id": "chat.rocket.RocketChat",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "19.08",
+    "base-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "/app/bin/rocketchat-desktop",
     "separate-locales": false,
@@ -34,13 +34,13 @@
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.0.2/rocketchat_3.0.2_amd64.deb",
-                    "sha256": "2b5e814548d8b2dad2e8c2e09142574c8d1e224f01d8be78e31fe947cb03236c"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.0.3/rocketchat_3.0.3_amd64.deb",
+                    "sha256": "354fb58ad3a4d7fc6fed504f0144546404f3fccd3c7226a93eaeb02b6aeaa6d6"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/3.0.2.tar.gz",
-                    "sha256": "5ca518421dde4fbbf5f3b3b1904dd63562bc43f16bb9c169ffed07022033a0df"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/3.0.3.tar.gz",
+                    "sha256": "c8c4f4d29ffe7cee825e7967bdabe1abdadc7153f169c36ee971b491a29628b1"
                 },
                 {
                     "type": "script",
