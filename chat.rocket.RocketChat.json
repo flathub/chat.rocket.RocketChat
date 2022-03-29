@@ -34,13 +34,13 @@
                 {
                     "type": "file",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.8.0/rocketchat_3.8.0_amd64.deb",
-                    "sha256": "dc4fbdcf63a7a367358c714008585455541bda7b9ed3682e4e03c51ff5c3905b"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.8.1/rocketchat-3.8.1-linux-amd64.deb",
+                    "sha256": "176535c35c00dc6af21ae5e7963f3b0f59e5079eb899148d8db38729493c82e3"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/refs/tags/3.8.0.tar.gz",
-                    "sha256": "ac422874746b4a1189c1d46ab9a3801195e0abbb0164b9038792a38ca2955ea5"
+                    "url": "https://github.com/RocketChat/Rocket.Chat.Electron/archive/refs/tags/3.8.1.tar.gz",
+                    "sha256": "c6f3d95097fc5644924ad584c8cfe74409ba795e5cd727857f2355f928ea10e7"
                 },
                 {
                     "type": "script",
@@ -52,7 +52,7 @@
                 }
             ],
             "build-commands": [
-                "ar x rocketchat_*.deb",
+                "ar x rocketchat*.deb",
                 "tar xf data.tar.xz -C ${FLATPAK_DEST} --strip-components=2 ./opt ./usr",
                 "rm -f control.tar.gz data.tar.xz debian-binary",
                 "rm -r ${FLATPAK_DEST}/share/icons/hicolor/1024x1024",
