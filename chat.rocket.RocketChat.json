@@ -35,7 +35,7 @@
                     "type": "file",
                     "only-arches": ["x86_64"],
                     "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.9.2/rocketchat-3.9.2-linux-amd64.deb",
-                    "sha256": "dd56dbd176fbf3239d223c9f19e20e4a637f8d5f3784ff9da5e56014d286b235"
+                    "sha256": "fc3e25f31c07cb0c84f6bf5c7f4fcd58dc159421b870175d03c653267f50d4b0"
                 },
                 {
                     "type": "file",
