@@ -16,8 +16,6 @@ finish-args:
   - --share=network
   # Camera for calls
   - --device=all
-  # We need to send notifications
-  - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.gnome.Mutter.IdleMonitor
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
