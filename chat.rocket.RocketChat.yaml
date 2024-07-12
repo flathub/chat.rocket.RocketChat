@@ -39,8 +39,8 @@ modules:
         dest-filename: rocketchat.deb
         only-arches:
           - x86_64
-        url: https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/3.9.15/rocketchat-3.9.15-linux-amd64.deb
-        sha256: 7cc9ebed108da1857257e0b328e22a68677a4fafb77c9c4cb8f8cd745019757d
+        url: https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.0.1/rocketchat-4.0.1-linux-amd64.deb
+        sha256: 196536a8679007c6e8bb4f896ba0ace1b40cd6cb402fe765282dd03530341086
         x-checker-data:
           type: json
           url: https://api.github.com/repos/RocketChat/Rocket.Chat.Electron/releases/latest
