@@ -53,5 +53,5 @@ modules:
       - rm -r "${FLATPAK_DEST}/share/icons/hicolor/1024x1024"
       - install -Dm0755 run.sh "${FLATPAK_DEST}/bin/rocketchat-desktop"
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/Rocket.Chat
-      - desktop-file-edit --set-key=Exec --set-value='rocketchat-desktop %U' "${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop"
+      - desktop-file-edit --remove-key=entry --set-key=Exec --set-value='rocketchat-desktop %U' "${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop"
       - install -Dm0644 "chat.rocket.RocketChat.appdata.xml" "${FLATPAK_DEST}/share/appdata/chat.rocket.RocketChat.appdata.xml"
