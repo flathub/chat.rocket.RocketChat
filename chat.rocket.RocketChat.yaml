@@ -39,8 +39,8 @@ modules:
         dest-filename: rocketchat.deb
         only-arches:
           - x86_64
-        url: https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.4.0/rocketchat-4.4.0-linux-amd64.deb
-        sha256: 7fc363efe04b8d61066d19ed64c6a1b5cdbe2cc31e25aeefd9457258ec63f565
+        url: https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.5.0/rocketchat-4.5.0-linux-amd64.deb
+        sha256: 18209521fa3b4399fb850b161bda1375f6b3d68974f8d5fc4da1d185e2615372
         x-checker-data:
           type: json
           url: https://api.github.com/repos/RocketChat/Rocket.Chat.Electron/releases/latest
@@ -53,5 +53,6 @@ modules:
       - rm -r "${FLATPAK_DEST}/share/icons/hicolor/1024x1024"
       - install -Dm0755 run.sh "${FLATPAK_DEST}/bin/rocketchat-desktop"
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/Rocket.Chat
-      - desktop-file-edit --remove-key=entry --set-key=Exec --set-value='rocketchat-desktop %U' "${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop"
+      - desktop-file-edit --remove-key=entry --set-key=Exec --set-value='rocketchat-desktop
+        %U' "${FLATPAK_DEST}/share/applications/rocketchat-desktop.desktop"
       - install -Dm0644 "chat.rocket.RocketChat.appdata.xml" "${FLATPAK_DEST}/share/appdata/chat.rocket.RocketChat.appdata.xml"
