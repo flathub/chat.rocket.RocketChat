@@ -212,4 +212,11 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <keywords>
+    <keyword>team chat</keyword>
+    <keyword>open source software</keyword>
+    <keyword>collaboration tools</keyword>
+    <keyword>secure messaging</keyword>
+    <keyword>instant messaging</keyword>
+  </keywords>
 </component>
